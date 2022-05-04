@@ -48,19 +48,32 @@ table {
   border-spacing: 0;
 }
 
+html {
+  height: 100vh;
+}
+
 body {
   background-color: '#fff';
   overflow-x: hidden;
   overflow-y: hidden;
-  padding: 1.2rem;
-  padding-top: 2rem;
-  height: 100vh;
+  background-image: url("../images/background-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 @media (max-width: 39.9375em) {
   body {
     overflow-y: scroll;
   }
+}
+
+.body-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  padding: 1rem;
 }
 
 h1 {
@@ -167,5 +180,58 @@ button {
   .hide-on-desktop {
     display: none;
   }
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 90%;
+}
+
+nav a {
+  font-size: 1.4rem;
+  font-family: "Didact Gothic", sans-serif;
+  color: #322D29;
+  opacity: 0.6;
+  padding-top: .5rem;
+}
+
+nav #logo {
+  opacity: 1;
+}
+
+nav img {
+  padding-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+nav .nav-group-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+nav .nav-group-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  bottom: 20px;
 }
 /*# sourceMappingURL=style.css.map */
