@@ -13,18 +13,21 @@
         href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Epilogue:wght@400;500;700&family=PT+Serif:wght@400;700&family=Redacted+Script:wght@300;400&display=swap"
         rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+        
 </head>
 
-<body>
+<body  data-barba="wrapper">
+    
     <section class="body-wrapper">
     <nav>
-        <div class="nav-group-1 ">
-          <a href="#" id="logo"> <img src="./images/Logo.png" alt="424 Luxury Apartment Logo"></a> 
-            <a href="#">ARCHITECTURE</a>
-            <a href="#">RESIDENCES</a>
-            <a href="#">AMENITIES</a>
-            <a href="#">NEIGHBORHOOD</a>
-            <a href="#">AVAILBAILITY</a>
+        <div class="nav-group-1">
+          <a href="index.html" id="logo"> <img src="./images/Logo.png" alt="424 Luxury Apartment Logo"></a> 
+
+          <a id="nav-item-1" href="404.html">ARCHITECTURE</a>
+            <a id="nav-item-2" href="404.html">RESIDENCES</a>
+            <a id="nav-item-3" href="404.html">AMENITIES</a>
+            <a id="nav-item-4" href="404.html">NEIGHBORHOOD</a>
+            <a id="nav-item-5" href="404.html">AVAILBAILITY</a>
         </div>
         <div class=" nav-group-2">
             <a href="#">TEAM</a>
@@ -34,13 +37,20 @@
             <img src="./images/hamburger-menu.svg" alt="">
         </div>
     </nav>
+    
+    <main data-barba="container" data-barba-namespace="home">
+    <img id="background-image" src="./images/background-desktop.jpg" alt="">
     <div class="title">
         <h1>424</h1>
         <h2>East End</h2>
     </div>
+</main>
    
 </section>
 
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+<script src="./script.js"></script>
 
 </html>
